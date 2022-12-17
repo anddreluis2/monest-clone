@@ -1,5 +1,5 @@
-import Header from "./pages/header";
+import Mailing from "./pages/mailing/mailing";
 
 export default function App() {
-  return <Header />;
+  return <Mailing />;
 }
