@@ -1,26 +1,37 @@
 import Logo from "./logo";
-import { FaAngleDown } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa";
 
-export default function Header() {
+export const Header: React.FC = ({}) => {
   return (
-    <div className="flex text-white h-16 items-center bg-purple p-6">
+    <div className="flex text-white h-16 items-center bg-purple-high p-6">
       {/*Logo*/}
       <span className="hover:cursor-pointer">
         <Logo />
       </span>
 
-      {/*Paths*/}
-      <div className="text-white flex gap-10 text-lg font-medium ml-6">
-        <h5 className="flex items-center gap-2">
-          Comunicação <FaAngleDown />
-        </h5>
-        <h5 className="flex items-center gap-2">
-          Gestão <FaAngleDown />
-        </h5>
-        <h5 className="flex items-center gap-2">
-          Cobrança <FaAngleDown />
-        </h5>
+      {/*PATH AND ICON DIV*/}
+      <div className="flex justify-between w-full">
+        {/*Paths*/}
+        <div className="text-white flex gap-10 text-lg px-4 font-medium ml-6">
+          <h5 className="flex items-center gap-2">
+            Comunicação <FaCaretDown size={14} />
+          </h5>
+          <h5 className="flex items-center gap-2">
+            Gestão <FaCaretDown size={14} />
+          </h5>
+          <h5 className="flex items-center gap-2">
+            Cobrança <FaCaretDown size={14} />
+          </h5>
+        </div>
+
+        {/*Icon*/}
+        <div className="flex items-center gap-2">
+          <div className="border rounded-full bg-purple-light text-purple-high h-[50px] w-[50px] flex items-center justify-center">
+            <p>AL</p>
+          </div>
+          <FaCaretDown />
+        </div>
       </div>
     </div>
   );
-}
+};

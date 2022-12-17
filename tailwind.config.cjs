@@ -6,11 +6,24 @@ module.exports = {
   ],
   theme: {
     colors: {
-      purple: '#6600CC',
+      gray: {
+        bg: '#F3F5F7',
+        disabled: '#D5DBDD',
+        low: '#BCC1C3',
+        medium: '#7A8186',
+        high: '#444648',
+      },
+      purple: {
+        high: '#6600CC',
+        light: '#EFE5F9',
+      },
       white: '#FFFFFF',
-      grayHigh: '#444648',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        inactive: '0px 2px 4px 2px rgba(0, 0, 0, 0.15)',
+      },
+    },
   },
   plugins: [],
 }
