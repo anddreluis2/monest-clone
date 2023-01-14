@@ -26,7 +26,7 @@ export const Header: React.FC = ({}) => {
 
         {/*Icon*/}
         <div className="flex items-center gap-2">
-          <div className="border rounded-full bg-purple-light text-purple-high h-[50px] w-[50px] flex items-center justify-center">
+          <div className="border rounded-full bg-purple-light text-purple-high h-[40px] w-[40px] flex items-center justify-center">
             <p>AL</p>
           </div>
           <FaCaretDown />
